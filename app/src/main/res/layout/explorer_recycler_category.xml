@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="isClicked"
+            type="com.example.shopapplication.fragments.explorer.adapters.CategoryAdapter" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:paddingVertical="8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/category_button"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:shapeAppearanceOverlay="@style/ShopApplication.CategoryButton"
+            android:backgroundTint="@color/buttons_background"
+            app:icon="@drawable/icon_smartphones"
+            app:iconTint="@color/buttons_icon_tint"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:theme="@style/ShopApplication"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:insetTop="0dp"/>
+
+        <TextView
+            android:id="@+id/category_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="@string/category_name"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/secondaryColor"/>
+
+    </LinearLayout>
+</layout>

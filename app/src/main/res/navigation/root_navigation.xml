@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_navigation"
+    app:startDestination="@id/explorer_fragment">
+
+    <fragment
+        android:id="@+id/explorer_fragment"
+        android:name="com.example.shopapplication.fragments.explorer.ExplorerFragment"
+        android:label="@string/explorer_title"
+        tools:layout="@layout/fragment_explorer">
+        <action
+            android:id="@+id/explorer_to_details"
+            app:destination="@id/details_fragment" />
+        <action
+            android:id="@+id/filter_dialog"
+            app:destination="@id/filterDialog" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cart_fragment"
+        android:name="com.example.shopapplication.fragments.cart.CartFragment"
+        android:label="@string/cart_title"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/cart_to_explorer"
+            app:destination="@id/explorer_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/details_fragment"
+        android:name="com.example.shopapplication.fragments.details.DetailsFragment"
+        android:label="@string/details_title"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/details_to_explorer"
+            app:destination="@id/explorer_fragment" />
+        <action
+            android:id="@+id/details_to_cart"
+            app:destination="@id/cart_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favorites_fragment"
+        android:name="com.example.shopapplication.fragments.favorites.FavoritesFragment"
+        android:label="@string/favorites_title"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.example.shopapplication.fragments.profile.ProfileFragment"
+        android:label="@string/profile_title"
+        tools:layout="@layout/fragment_profile" />
+
+    <dialog
+        android:id="@+id/filterDialog"
+        android:name="com.example.shopapplication.fragments.explorer.filter.FilterDialog"
+        android:label="@string/filter_title"
+        tools:layout="@layout/dialog_filter" />
+</navigation>

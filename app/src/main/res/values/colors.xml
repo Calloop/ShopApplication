@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#FF6E4E</color>
+    <color name="secondaryColor">#010035</color>
+    <color name="bottom_menu_icon_color">#FFFFFF</color>
+    <color name="bottom_menu_text_color">#FFFFFF</color>
+    <color name="buttons_background">#FFFFFF</color>
+    <color name="buttons_icon_tint">#B3B3C3</color>
+    <color name="hot_button_color">#FFFFFF</color>
+    <color name="background">#F8F8F8</color>
+    <color name="divider_background">#33FFFFFF</color>
+    <color name="layout_background_color">#282843</color>
+    <color name="stars_color">#FFB800</color>
+    <color name="primary_phone_color">#772D03</color>
+    <color name="secondary_phone_color">#010035</color>
+    <color name="secondary_text_color">#8D8D8D</color>
+    <color name="text_color">#FFFFFF</color>
+</resources>

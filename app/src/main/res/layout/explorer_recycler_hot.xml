@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="378dp"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/hot_picture_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/picture_iphone"/>
+
+    <ImageView
+        android:id="@+id/hot_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icon_new"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/hot_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/bottom_menu_text_color"
+        android:textSize="24sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/hot_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/item_description"
+        android:textColor="@color/bottom_menu_text_color"
+        android:textSize="11sp"
+        android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hot_item_name"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hot_button_buy"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/hot_button_color"
+        android:text="@string/hot_button_text"
+        android:textAllCaps="false"
+        android:textSize="11sp"
+        android:textColor="@color/secondaryColor"
+        app:cornerRadius="8dp"
+        android:theme="@style/ShopApplication"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hot_item_description"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
