@@ -2,7 +2,7 @@
 
 Тестовое задание
 
-Использованный стек технологий: ● Kotlin; ● Корутины; ● LiveData или RX; ● Dagger или Koin; ● MVVM;
+Использованный стек технологий: ● Kotlin; ● Корутины; ● LiveData; ● Koin; ● MVVM;
 ● AdapterDelegates; ● XML верстка; ● Clean Architecture; ● Многомодульность.
 
 1. Экран «Main»
